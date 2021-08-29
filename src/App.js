@@ -4,21 +4,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-      <input type="hidden" name="form-name" value="contact"/>
+      <form name="contact-form" method="POST" data-netlify="true" onSubmit="submit">
+        <input type='hidden' name="form-name" value="contact-form"/>
+    <input type="text" name="name" placeholder="name" /> 
+  
+    <input type="email" name="email" placeholder="email" />
+  
+    <textarea name="message"></textarea>
 
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
     <button type="submit">Send</button>
-  </p>
 </form>
 
     </div>
